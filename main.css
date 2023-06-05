@@ -1,0 +1,98 @@
+* {
+    font-family: "Poppins", "sans-serif";
+    font-weight: bold;
+}
+
+body {
+    /* background-color: #212121; */
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    padding: 0em;
+    margin: 0em;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./pexels-jonathan-petersson-399187.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-image: url(./goal\ black.png);
+    /* background-image: url(./goal\ white.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover ;
+    margin-top: 1em;
+}
+
+.football{
+    width: 30px;
+    height: 30px;
+}
+
+.goal-keeper{
+    margin-top: 5em;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: #212121;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    column-gap: 0em;
+}
+
+column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2em;
+    row-gap: 1em;
+}
+
+.button {
+    color: #212121;
+    background-color: #fff;
+    width: 5.5em;
+    height: 4em;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+.button:active {
+    background-color: #240c3b ;
+    color: #fff;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    row-gap: 1em;
+}
