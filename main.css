@@ -18,10 +18,10 @@ body {
     background-image: url(./pexels-jonathan-petersson-399187.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:cover ;
+    background-size: cover;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,14 +32,8 @@ body {
     /* background-image: url(./goal\ white.png); */
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:cover ;
+    background-size: cover;
     margin-top: 1em;
-}
-
-.goal-keeper{
-    margin-top: 5em;
-    width: 100px;
-    height: 100px;
 }
 
 a {
@@ -74,7 +68,7 @@ column {
 }
 
 .button:active {
-    background-color: #240c3b ;
+    background-color: #240c3b;
     color: #fff;
 }
 
@@ -92,13 +86,28 @@ footer {
     row-gap: 1em;
 }
 
+
+/* #greet,
+#goals {
+    margin: 0em;
+    color: #fff;
+    z-index: 20;
+    font-weight: bold;
+    position: fixed;
+    top: 8.3em;
+}
+
+#goals {
+    top: 9.5em;
+} */
+
+
 /* animation */
 
 @keyframes top {
     0% {
         transform: translateX(0%) translateY(0%);
     }
-
     100% {
         transform: translateX(0%) translateY(-650%);
     }
@@ -108,7 +117,6 @@ footer {
     0% {
         transform: translateX(0%) translateY(0%);
     }
-
     100% {
         transform: translateX(0%) translateY(-400%);
     }
@@ -118,7 +126,6 @@ footer {
     0% {
         transform: translateX(0%) translateY(0%);
     }
-
     100% {
         transform: translateX(250%) translateY(-650%);
     }
@@ -128,7 +135,6 @@ footer {
     0% {
         transform: translateX(0%) translateY(0%);
     }
-
     100% {
         transform: translateX(250%) translateY(-400%);
     }
@@ -138,7 +144,6 @@ footer {
     0% {
         transform: translateX(0%) translateY(0%);
     }
-
     100% {
         transform: translateX(-250%) translateY(-650%);
     }
@@ -148,41 +153,135 @@ footer {
     0% {
         transform: translateX(0%) translateY(0%);
     }
-
     100% {
         transform: translateX(-250%) translateY(-400%);
     }
 }
 
+
 /* football */
 
-.football{
+.football {
     width: 30px;
     height: 30px;
 }
 
+
 /* animation classes */
 
-.top{
+.top {
     animation: top 3s;
 }
 
-.bottom{
+.bottom {
     animation: bottom 3s;
 }
 
-.topRight{
+.topRight {
     animation: topRight 3s;
 }
 
-.bottomRight{
+.bottomRight {
     animation: bottomRight 3s;
 }
 
-.topLeft{
+.topLeft {
     animation: topLeft 3s;
 }
 
-.bottomLeft{
+.bottomLeft {
     animation: bottomLeft 3s;
+}
+
+
+/* goal keeper animation */
+
+@keyframes topLeftGoal {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(-80%) translateY(-70%);
+    }
+}
+
+@keyframes bottomLeftGoal {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(-80%) translateY(0%);
+    }
+}
+
+@keyframes topGoal {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(0%) translateY(-70%);
+    }
+}
+
+@keyframes bottomGoal {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+@keyframes topRightGoal {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(80%) translateY(-70%);
+    }
+}
+
+@keyframes bottomRightGoal {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(80%) translateY(0%);
+    }
+}
+
+
+/* goal keeper */
+
+.goal-keeper {
+    margin-top: 5em;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* goal animations */
+
+.topLeftGoal {
+    animation: topLeftGoal 3s;
+}
+
+.bottomLeftGoal {
+    animation: bottomLeftGoal 3s;
+}
+
+.topGoal {
+    animation: topGoal 3s;
+}
+
+.bottomGoal {
+    animation: bottomGoal 3s;
+}
+
+.topRightGoal {
+    animation: topRightGoal 3s;
+}
+
+.bottomRightGoal {
+    animation: bottomRightGoal 3s;
 }
