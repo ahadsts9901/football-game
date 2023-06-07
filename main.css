@@ -36,11 +36,6 @@ body {
     margin-top: 1em;
 }
 
-.football{
-    width: 30px;
-    height: 30px;
-}
-
 .goal-keeper{
     margin-top: 5em;
     width: 100px;
@@ -95,4 +90,99 @@ footer {
     align-items: center;
     padding: 0.5em 1em;
     row-gap: 1em;
+}
+
+/* animation */
+
+@keyframes top {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(0%) translateY(-650%);
+    }
+}
+
+@keyframes bottom {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(0%) translateY(-400%);
+    }
+}
+
+@keyframes topRight {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(250%) translateY(-650%);
+    }
+}
+
+@keyframes bottomRight {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(250%) translateY(-400%);
+    }
+}
+
+@keyframes topLeft {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(-250%) translateY(-650%);
+    }
+}
+
+@keyframes bottomLeft {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    100% {
+        transform: translateX(-250%) translateY(-400%);
+    }
+}
+
+/* football */
+
+.football{
+    width: 30px;
+    height: 30px;
+}
+
+/* animation classes */
+
+.top{
+    animation: top 3s;
+}
+
+.bottom{
+    animation: bottom 3s;
+}
+
+.topRight{
+    animation: topRight 3s;
+}
+
+.bottomRight{
+    animation: bottomRight 3s;
+}
+
+.topLeft{
+    animation: topLeft 3s;
+}
+
+.bottomLeft{
+    animation: bottomLeft 3s;
 }
