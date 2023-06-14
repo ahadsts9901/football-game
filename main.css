@@ -86,6 +86,9 @@ footer {
     row-gap: 1em;
 }
 
+.yes{
+    display: none;
+}
 
 /* #greet,
 #goals {
@@ -170,27 +173,27 @@ footer {
 /* animation classes */
 
 .top {
-    animation: top 3s;
+    animation: top 700ms;
 }
 
 .bottom {
-    animation: bottom 3s;
+    animation: bottom 700ms;
 }
 
 .topRight {
-    animation: topRight 3s;
+    animation: topRight 700ms;
 }
 
 .bottomRight {
-    animation: bottomRight 3s;
+    animation: bottomRight 700ms;
 }
 
 .topLeft {
-    animation: topLeft 3s;
+    animation: topLeft 700ms;
 }
 
 .bottomLeft {
-    animation: bottomLeft 3s;
+    animation: bottomLeft 700ms;
 }
 
 
@@ -263,25 +266,40 @@ footer {
 /* goal animations */
 
 .topLeftGoal {
-    animation: topLeftGoal 3s;
+    animation: topLeftGoal 700ms;
 }
 
 .bottomLeftGoal {
-    animation: bottomLeftGoal 3s;
+    animation: bottomLeftGoal 700ms;
 }
 
 .topGoal {
-    animation: topGoal 3s;
+    animation: topGoal 700ms;
 }
 
 .bottomGoal {
-    animation: bottomGoal 3s;
+    animation: bottomGoal 700ms;
 }
 
 .topRightGoal {
-    animation: topRightGoal 3s;
+    animation: topRightGoal 700ms;
 }
 
 .bottomRightGoal {
-    animation: bottomRightGoal 3s;
+    animation: bottomRightGoal 700ms;
+}
+
+/* media query */
+
+@media only screen and (min-width: 1440px){
+    .container, row, .football{
+        display: none;
+    }
+
+    .yes{
+        display: block;
+        color: #fff;
+        font-weight: 600;
+    }
+
 }
